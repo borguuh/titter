@@ -17,7 +17,7 @@ class Database {
     }
 
     connect() {
-        mongoose.connect("mongodb+srv://admin:dbUserPassword@twitterclonecluster.e0mcw.azure.mongodb.net/TwitterCloneDB?retryWrites=true&w=majority")
+        mongoose.connect("mongodb://localhost:27017/twitter")
         .then(() => {
             console.log("database connection successful");
         })
